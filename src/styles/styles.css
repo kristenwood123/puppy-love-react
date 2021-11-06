@@ -27,18 +27,33 @@ body {
 }
 
 /* ----------------------------------- Home -------------------------------------- */
-.hero-text {
-  display: flex;
-  justify-content: center;
-}
 
 .btn {
   border: none;
 }
 
+.logo {
+  width: 30px;
+}
+
 /* ----------------------------------- Modal -------------------------------------- */
+.modal-login {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-text {
   color: black;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-close {
+  border: none;
 }
 
 @media screen and (max-width: 375px) {
