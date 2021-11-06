@@ -1,5 +1,7 @@
 import React from 'react'
-import pawLogo from './images/1314467.svg'
+import pawLogo from './images/2ndlogo.svg'
+import { BsApple } from 'react-icons/bs'
+import { FaGooglePlay } from 'react-icons/fa'
 
 const Modal = ({showModal, setShowModal}) => {
 
@@ -22,8 +24,8 @@ const Modal = ({showModal, setShowModal}) => {
       <div className="btn modal-btn-container">
         <h2>Get the App</h2>
         <div className="btn-container">
-          <button className='btn'>Download</button>
-          <button className='btn'>Download</button>
+          <button className='btn'><BsApple/>Download</button>
+          <button className='btn'><FaGooglePlay/>Download</button>
         </div>
       </div>
      
