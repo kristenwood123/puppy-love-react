@@ -4,15 +4,15 @@ import './styles/styles.css'
 
 const NavBar = () => {
   return (
-    <Navbar variant='dark' collapseOnSelect expand="lg" class='navbar'>
+    <Navbar variant='dark' collapseOnSelect expand="lg" className='navbar' id='navbar'>
       <Container>
-        <Navbar.Brand href="#home">Puppy Love</Navbar.Brand>
+        <Navbar.Brand href="#home" className='navbar-brand'>Puppy Love</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
+          <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Explore</Nav.Link>
-            <Nav.Link href="#link">Login</Nav.Link>
+            <Nav.Link href="link">Explore</Nav.Link>
+            <Nav.Link href="link">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

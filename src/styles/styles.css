@@ -1,3 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  --color-main-purple: #cc63c7;
+}
+
+body {
+  background: linear-gradient(var(--color-main-purple), #cc67c3);
+  color: white;
+}
+
 .navbar {
-  background: #ab3aa5;
+  background: var(--color-main-purple);
+  font-family: Ubuntu;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 30px;
+}
+.navbar-toggler {
+  border: none;
+}
+
+#navbar {
+  color: white;
+}
+
+/* ----------------------------------- Home -------------------------------------- */
+.hero-text {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  background-color: ;
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 1rem;
+    color: white;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-toggler {
+    font-size: 1rem;
+    padding: 2px 6px;
+  }
+}
+
+@media screen and (min-width: 675px) {
+  .navbar {
+    padding: 2rem 6rem;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .navbar {
+    padding: 5rem 10rem;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+  }
 }
