@@ -1,14 +1,19 @@
 import React from 'react'
 
-const Modal = () => {
+const Modal = ({showModal, setShowModal}) => {
+
+  const handleClose = () => {
+    setShowModal(false)
+  }
+
   return (
-    <div className='modal'>
+    <div className='modal1'>
       <div className="modal-text">
-      <h2>Create account</h2>
-      <p>By clicking Log In, you agree to our Tmers.Learn how we process your data in our Privacy Policy and Cookie Policy.</p>
+        <button onClick={handleClose}>close</button>
+      <p>By clicking Log In, you agree to our Terms. Learn how we process your data in our Privacy Policy and Cookie Policy.</p>
       <button>Login with Google</button>
       <button>Login with Email</button>
-      <p><a href="">Trouble Loggin In?</a></p>
+      <p><a href="#">Trouble Loggin In?</a></p>
 
       </div>
       <div className="modal-btn-container">

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -8,13 +9,21 @@ import Footer from './Footer'
 import Home from './Home'
 import Modal from './Modal'
 const App = () => {
+  const [showModal, setShowModal] = useState(false)
+
   return (
-    <div>
+    <>
       <NavBar fixed="top"/>
-      <Home/>
-      <Modal/>
-      <Footer/>
-    </div>
+      <Home 
+        showModal={showModal}
+        setShowModal={setShowModal}
+        />
+        {showModal && 
+        <Modal showModal={showModal} setShowModal={setShowModal}/>
+        
+        }
+      {/* <Footer/> */}
+    </>
   )
 }
 
