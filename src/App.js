@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { Routes, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -14,15 +14,16 @@ const App = () => {
   return (
     <>
       <NavBar fixed="top"/>
+      <Routes>
       <Home 
         showModal={showModal}
         setShowModal={setShowModal}
         />
         {showModal && 
         <Modal showModal={showModal} setShowModal={setShowModal}/>
-        
         }
       {/* <Footer/> */}
+      </Routes>
     </>
   )
 }
