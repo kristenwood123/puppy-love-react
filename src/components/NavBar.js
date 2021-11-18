@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
-import pawLogo from './images/1314467.svg'
-import './styles/styles.css'
+import pawLogo from '../images/1314467.svg'
+import '../styles/styles.css'
 
 const NavBar = () => {
   return (

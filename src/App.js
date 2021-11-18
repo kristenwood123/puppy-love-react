@@ -4,29 +4,30 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 // Components
-import NavBar from './NavBar'
-import Footer from './Footer'
-import Home from './Home'
-import Modal from './Modal'
-import Explore from './Explore'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import Home from './components/Home'
+import Modal from './components/LoginModal'
+import Explore from './components/Explore'
 
 const App = () => {
   const [showModal, setShowModal] = useState(false)
+  const [currentUser, setCurrentUser] = useState({})
 
   return (
     <>
       <NavBar fixed="top"/>
-      <Home 
-        showModal={showModal}
-        setShowModal={setShowModal}
-        />
         {showModal && 
         <Modal showModal={showModal} setShowModal={setShowModal}/>
         }
-        
+      
         <Routes>
-        <Route path='/explore' element={<Explore/>} />
-      </Routes>
+          <Route 
+            path='/' 
+            element={<Home showModal={showModal} setShowModal={setShowModal} />} 
+          />
+          <Route path='/explore' element={<Explore/>} />
+        </Routes>
     </>
   )
 }

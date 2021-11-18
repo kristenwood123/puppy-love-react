@@ -1,5 +1,5 @@
 import React from 'react'
-import iphone from './images/iphone-dog.png'
+import iphone from '../images/iphone-dog.png'
 
 const Home = ({showModal, setShowModal}) => {
 
