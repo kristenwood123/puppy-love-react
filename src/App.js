@@ -12,8 +12,21 @@ import Explore from './components/Explore'
 
 const App = () => {
   const [showModal, setShowModal] = useState(false)
-  const [currentUser, setCurrentUser] = useState({})
+  const [currentUser, setCurrentUser] = useState({
+      uid: 1,
+      name: 'Kristen Woodward',
+      email: 'kristen34@gmail.com',
+      liked: {},
+      disliked: {}
+  })
 
+  const [dogs, setDogs] = useState([
+    {
+      id: 'eiroujds',
+      name: 'Bear',
+      breed: 'Husky'
+    }
+  ])
   return (
     <>
       <NavBar fixed="top"/>
@@ -24,9 +37,24 @@ const App = () => {
         <Routes>
           <Route 
             path='/' 
-            element={<Home showModal={showModal} setShowModal={setShowModal} />} 
+            element={
+              <Home 
+                showModal={showModal} 
+                setShowModal={setShowModal}
+                currentUser={currentUser} 
+              />
+            }
           />
-          <Route path='/explore' element={<Explore/>} />
+          <Route 
+            path='/explore'
+            element={
+              <Explore 
+                currentUser={currentUser}
+                setCurrentUser={setCurrentUser}
+                dogs={dogs}
+              />
+            } 
+          />
         </Routes>
     </>
   )
