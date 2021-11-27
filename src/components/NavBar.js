@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <Navbar variant='dark' collapseOnSelect expand="lg" className='navbar' id='navbar'>
       <Container>
-        <Navbar.Brand href="#home" className='navbar-brand'>
+        <Navbar.Brand href="/" className='navbar-brand'>
           <img src={pawLogo} alt="paw logo" className='logo'/>Puppy Love</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>

@@ -1,4 +1,6 @@
 import React from 'react'
+import Dog from './Dog'
+
 
 const Explore = ({ currentUser, setCurrentUser, dogs }) => {
   const handleLike = () => {
@@ -12,13 +14,14 @@ const Explore = ({ currentUser, setCurrentUser, dogs }) => {
   console.log(currentUser)
   return (
     <div style={{backgroundColor: 'white', color: 'black'}}>
-      <h1>Explore!!</h1>
+      <h1>Explore</h1>
       {dogs.map(dog => {
         return (
           <>
-            <p>{dog.name}</p>
+            {/* <p>{dog.name}</p>
             <button>Like</button>
-            <button>Dislike</button>
+            <button>Dislike</button> */}
+            <Dog dog={dog}/>
           </>
         )
       })}

@@ -1,46 +1,64 @@
 
-export const data = [
+const data = [
   {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: ''
+    image: './images/dog1.jpg'
   },
    {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: ''
+    image: './images/dog2.jpg'
   },
    {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: ''
+    image: './images/dog3.jpg'
   },
    {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: ''
+    image: './images/dog4.jpg'
   },
    {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: ''
+    image: './images/dog5.jpg'
   },
    {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: ''
+    image: './images/dog6.jpg'
   },
    {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: ''
+    image: './images/dog7.jpg'
+  },
+   {
+    id: 'eiroujds',
+    name: 'Bear',
+    breed: 'Husky',
+    image: './images/dog8.jpg'
+  },
+   {
+    id: 'eiroujds',
+    name: 'Bear',
+    breed: 'Husky',
+    image: './images/dog9.jpg'
+  },
+   {
+    id: 'eiroujds',
+    name: 'Bear',
+    breed: 'Husky',
+    image: './images/dog10.jpg'
   }
 ]
 

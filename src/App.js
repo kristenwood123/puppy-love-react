@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import data  from './data'
+import data from './data'
 
 // Components
 import NavBar from './components/NavBar'
