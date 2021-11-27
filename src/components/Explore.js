@@ -17,12 +17,9 @@ const Explore = ({ currentUser, setCurrentUser, dogs }) => {
       <h1>Explore</h1>
       {dogs.map(dog => {
         return (
-          <>
-            {/* <p>{dog.name}</p>
-            <button>Like</button>
-            <button>Dislike</button> */}
+          <React.Fragment>
             <Dog dog={dog}/>
-          </>
+          </React.Fragment>
         )
       })}
     </div>
