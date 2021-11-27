@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import data  from './data'
 
 // Components
 import NavBar from './components/NavBar'
@@ -20,13 +20,8 @@ const App = () => {
       disliked: {}
   })
 
-  const [dogs, setDogs] = useState([
-    {
-      id: 'eiroujds',
-      name: 'Bear',
-      breed: 'Husky'
-    }
-  ])
+  const [dogs, setDogs] = useState(data)
+  
   return (
     <>
       <NavBar fixed="top"/>
