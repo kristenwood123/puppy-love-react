@@ -1,6 +1,7 @@
 import React from 'react'
 import Dog from './Dog'
 
+import image from '../images/dog1.jpg'
 
 const Explore = ({ currentUser, setCurrentUser, dogs }) => {
   const handleLike = () => {

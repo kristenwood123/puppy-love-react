@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Dog = ({dog}) => {
   const { id, name, breed, image } = dog;
 

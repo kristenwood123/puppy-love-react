@@ -4,7 +4,7 @@ const data = [
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: '..images/dog1.jpg'
+    image: './images/dog1.jpg'
   },
    {
     id: 'eiroujds',
@@ -16,19 +16,19 @@ const data = [
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: '../images/dog3.jpg'
+    image: './images/dog3.jpg'
   },
    {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: '../images/dog4.jpg'
+    image: './images/dog4.jpg'
   },
    {
     id: 'eiroujds',
     name: 'Bear',
     breed: 'Husky',
-    image: '../images/dog5.jpg'
+    image: './images/dog5.jpg'
   },
    {
     id: 'eiroujds',
