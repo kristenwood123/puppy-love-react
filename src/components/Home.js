@@ -10,8 +10,6 @@ const Home = ({showModal, setShowModal}) => {
     setShowModal(!showModal)
   }
 
-
-
   return (
     <>
     <section className='hero-text'>
