@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import iphone from '../images/iphone-dog.png'
+import Slider from './Slider'
 import { homeData } from '../data/home-data'
-import { data } from '../data/carousel-data'
+
 
 const Home = ({showModal, setShowModal}) => {
-  const [carouselData, setCarouselData] = useState(data)
 
   const handleModal = () => {
     setShowModal(!showModal)
@@ -36,9 +36,7 @@ const Home = ({showModal, setShowModal}) => {
           })}
         </div>
     </section>
-    <section className="carousel-section">
-
-    </section>
+    <Slider/>
     </>
   )
 }
