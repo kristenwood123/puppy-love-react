@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   --color-main-purple: #cc63c7;
+  --color-button-purple: #520f80;
 }
 
 body {
@@ -136,6 +137,55 @@ hr {
 
 .btn-google {
   margin-bottom: 1rem;
+}
+/* ------------------- Explore Page ------------------- */
+.explore-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+
+.dog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.dog-list {
+  display: grid;
+  max-width: 800px;
+}
+
+.dog__card {
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.dog__card img {
+  width: 200px;
+  height: 250px;
+}
+
+/* ------------------- Dog Card ------------------- */
+.match__button {
+  border: 1px solid black;
+  background-color: var(--color-button-purple);
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 375px) {

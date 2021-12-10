@@ -1,8 +1,6 @@
 import React from 'react'
 import Dog from './Dog'
 
-import image from '../images/dog1.jpg'
-
 const Explore = ({ currentUser, setCurrentUser, dogs }) => {
   const handleLike = () => {
 
@@ -14,16 +12,18 @@ const Explore = ({ currentUser, setCurrentUser, dogs }) => {
 
   console.log(currentUser)
   return (
-    <div style={{backgroundColor: 'white', color: 'black'}}>
-      <h1>Explore</h1>
-      {dogs.map(dog => {
-        return (
-          <React.Fragment>
-            <Dog dog={dog}/>
-          </React.Fragment>
-        )
-      })}
-    </div>
+        <div className='explore-page'>
+          <h1>Explore</h1>
+          <div className="dog-wrapper">
+            {dogs.map(dog => {
+              return (
+                <div className='dog-list'>
+                  <Dog dog={dog}/>
+                </div>
+              )
+            })}
+          </div>
+        </div>
   )
 }
 
