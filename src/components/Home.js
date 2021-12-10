@@ -1,24 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import iphone from '../images/iphone-dog.png'
-import { homeData } from '../home-data'
+import { homeData } from '../data/home-data'
+import { data } from '../data/carousel-data'
 
 const Home = ({showModal, setShowModal}) => {
+  const [carouselData, setCarouselData] = useState(data)
 
   const handleModal = () => {
     setShowModal(!showModal)
   }
 
+
+
   return (
     <>
-    <div className='hero-text'>
+    <section className='hero-text'>
       <h1>Find your perfect puppy nearby.</h1>
       <img src={iphone} alt="" style={{maxWidth:'200px'}} className='iphone'/>
       <div className="button-login-wrapper">
         <button 
         onClick={handleModal} className='btn btn-login'>Create account</button>
         </div>
-    </div>
-    <div className="hero-section">
+    </section>
+    <section className="hero-section">
       <h3>All you need is love...and a puppy.</h3>
         <div className="hero-wrapper">
           {homeData.map((item) => {
@@ -31,7 +35,10 @@ const Home = ({showModal, setShowModal}) => {
             )
           })}
         </div>
-    </div>
+    </section>
+    <section className="carousel-section">
+
+    </section>
     </>
   )
 }

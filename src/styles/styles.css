@@ -1,15 +1,65 @@
-* {
-  padding: 0;
-  margin: 0;
+/*
+=============== 
+Variables
+===============
+*/
+:root {
   --color-main-purple: #cc63c7;
   --color-button-purple: #520f80;
   --color-gray-bg: #f9f9f9;
   --color-dark-text: #333333;
+  --spacing: 0.1rem;
+  --transition: all 0.3s linear;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(var(--color-main-purple), #cc67c3);
   color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--color-dark-text);
 }
 
 .navbar {
@@ -49,7 +99,6 @@ body {
   background-color: white;
   padding: 10px 30px;
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
   border-radius: 23px;
   color: var(--color-dark-text);
@@ -262,14 +311,14 @@ hr {
 .dog__card:hover {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
   cursor: pointer;
-  transition: 0.2s ease-out;
+  transition: var(--transition);
 }
 
 .icons:hover,
 .icon-small:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: 0.2s ease-out;
+  transition: var(--transition);
 }
 
 /* --------------------Footer-------------------- */
@@ -303,7 +352,7 @@ footer {
 .footer-icons ul li:hover,
 .footer-links ul li:hover {
   color: var(--color-main-purple);
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
 .footer-logo {
@@ -316,7 +365,6 @@ footer ul {
 
 footer ul li {
   font-size: 12px;
-  list-style-type: none;
   color: var(--color-dark-text);
   cursor: pointer;
   margin-left: 3px;
