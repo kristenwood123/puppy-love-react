@@ -19,7 +19,7 @@ const Home = ({showModal, setShowModal}) => {
         </div>
     </div>
     <div className="hero-section">
-      <h3>All you need is love...and a Dog</h3>
+      <h3>All you need is love...and a puppy.</h3>
         <div className="hero-wrapper">
           {homeData.map((item) => {
             const { id, image, description } = item;
