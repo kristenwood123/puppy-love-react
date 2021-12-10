@@ -1,64 +1,74 @@
 
 const data = [
   {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: 'eirou5jds',
+    name: 'Max',
     breed: 'Husky',
-    image: './images/dog1.jpg'
+    image: './images/dog1.jpg',
+    percent: 50
   },
    {
-    id: 'eiroujds',
+    id: 'eirou3jds',
     name: 'Bear',
     breed: 'Husky',
-    image: './images/dog2.jpg'
+    image: './images/dog2.jpg',
+    percent: 90
   },
    {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: 'eirou7jds',
+    name: 'Bella',
     breed: 'Husky',
-    image: './images/dog3.jpg'
+    image: './images/dog3.jpg',
+    percent: 81
   },
    {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: 'eirou9jds',
+    name: 'Luna',
     breed: 'Husky',
-    image: './images/dog4.jpg'
+    image: './images/dog4.jpg',
+    percent: 43
   },
    {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: 'ei2roujds',
+    name: 'Bailey',
     breed: 'Husky',
-    image: './images/dog5.jpg'
+    image: './images/dog5.jpg',
+    percent: 76
   },
    {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: 'eiro4ujds',
+    name: 'Rocky',
     breed: 'Husky',
-    image: './images/dog6.jpg'
+    image: './images/dog6.jpg',
+    percent: 89
   },
    {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: 'eirou7jds',
+    name: 'Tucker',
     breed: 'Husky',
-    image: './images/dog7.jpg'
+    image: './images/dog7.jpg',
+    percent: 10
   },
    {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: 'eirouj9ds',
+    name: 'Jack',
     breed: 'Husky',
-    image: './images/dog8.jpg'
+    image: './images/dog8.jpg',
+    percent: 45
   },
    {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: '3eiroujds',
+    name: 'Stella',
     breed: 'Husky',
-    image: './images/dog9.jpg'
+    image: './images/dog9.jpg',
+    percent: 23
   },
    {
-    id: 'eiroujds',
-    name: 'Bear',
+    id: 'eiroujds0',
+    name: 'Milo',
     breed: 'Husky',
-    image: './images/dog10.jpg'
+    image: './images/dog10.jpg',
+    percent: 50
   }
 ]
 

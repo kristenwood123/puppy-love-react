@@ -3,6 +3,7 @@
   margin: 0;
   --color-main-purple: #cc63c7;
   --color-button-purple: #520f80;
+  --color-gray-bg: #f9f9f9;
 }
 
 body {
@@ -54,10 +55,6 @@ body {
   color: white;
   font-size: 20px;
   text-transform: uppercase;
-}
-
-.btn {
-  border: none;
 }
 
 .logo {
@@ -144,11 +141,13 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--color-gray-bg);
   text-align: center;
   color: black;
   width: 100%;
 }
+
+/* ------------------- Dog Card ------------------- */
 
 .dog-wrapper {
   display: flex;
@@ -163,29 +162,77 @@ hr {
 }
 
 .dog__card {
-  border: 1px solid gray;
   border-radius: 8px;
   margin: 10px;
+  background-color: white;
 }
 
 .dog__card img {
-  width: 200px;
-  height: 250px;
+  width: 100%;
+  border-radius: 8px;
+  height: 280px;
 }
 
-/* ------------------- Dog Card ------------------- */
+.card__text h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
 .match__button {
   border: 1px solid black;
   background-color: var(--color-button-purple);
   color: white;
   border: none;
   font-size: 12px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
+  margin-top: -30px;
+  font-size: 12px;
   border-radius: 20px;
+}
+
+.match__button:hover {
+  background-color: green;
+}
+
+.heart-margin {
+  padding-right: 5px;
+}
+/* Button Groups */
+.button-group {
+  margin: 1rem 1rem;
+}
+
+.icons {
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background: white;
+  border: none;
+  padding: 10px 6px;
+  margin: 0.5rem;
+}
+
+.icon-small {
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background: white;
+  border: none;
+  padding: 0px 5px 0px 5px;
+  margin: 0.5rem;
+  height: 35px;
+  width: 35px;
+}
+
+.dog__card:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.icons:hover,
+.icon-small:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s ease-out;
 }
 
 @media screen and (max-width: 375px) {
