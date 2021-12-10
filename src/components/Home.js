@@ -1,5 +1,6 @@
 import React from 'react'
 import iphone from '../images/iphone-dog.png'
+import { homeData } from '../home-data'
 
 const Home = ({showModal, setShowModal}) => {
 
@@ -8,12 +9,30 @@ const Home = ({showModal, setShowModal}) => {
   }
 
   return (
+    <>
     <div className='hero-text'>
       <h1>Find your perfect puppy nearby.</h1>
       <img src={iphone} alt="" style={{maxWidth:'200px'}} className='iphone'/>
-       <button 
-       onClick={handleModal} className='btn btn-login'>Create account</button>
+      <div className="button-login-wrapper">
+        <button 
+        onClick={handleModal} className='btn btn-login'>Create account</button>
+        </div>
     </div>
+    <div className="hero-section">
+      <h3>All you need is love...and a Dog</h3>
+        <div className="hero-wrapper">
+          {homeData.map((item) => {
+            const { id, image, description } = item;
+            return (
+              <div className="hero-items" key={id}>
+                <img src={image} alt="" />
+                <p>{description}</p>
+              </div>
+            )
+          })}
+        </div>
+    </div>
+    </>
   )
 }
 

@@ -4,6 +4,7 @@
   --color-main-purple: #cc63c7;
   --color-button-purple: #520f80;
   --color-gray-bg: #f9f9f9;
+  --color-dark-text: #333333;
 }
 
 body {
@@ -33,6 +34,7 @@ body {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .iphone {
@@ -44,22 +46,56 @@ body {
 }
 
 .btn-login {
-  background-color: rgb(212, 149, 149);
+  background-color: white;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 23px;
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
+  color: var(--color-dark-text);
+  font-size: 16px;
+}
+
+.button-login-wrapper {
+  margin: 3rem 0;
 }
 
 .logo {
   width: 30px;
   margin-bottom: 7px;
+}
+
+.hero-section {
+  background-color: white;
+  color: var(--color-dark-text);
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.hero-section h3 {
+  padding-bottom: 3rem;
+}
+
+.hero-items {
+  margin: 1rem;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-section img {
+  max-width: 300px;
+}
+
+.hero-items p {
+  font-size: 12px;
+  max-width: 250px;
+  color: rgb(65, 62, 62);
+  text-align: center;
+  margin: 10px;
 }
 
 /* ----------------------------------- Modal -------------------------------------- */
@@ -73,7 +109,7 @@ body {
 }
 
 .modal-text {
-  color: black;
+  color: var(--color-dark-text);
   border-radius: 8px;
   background: white;
   max-width: 400px;
@@ -143,7 +179,7 @@ hr {
   align-items: center;
   background-color: var(--color-gray-bg);
   text-align: center;
-  color: black;
+  color: var(--color-dark-text);
   width: 100%;
 }
 
@@ -233,6 +269,17 @@ hr {
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.2s ease-out;
+}
+
+/* --------------------Footer-------------------- */
+footer {
+  padding: 5rem;
+  background-color: white;
+  color: var(--color-main-purple);
+}
+
+.footer-logo {
+  color: var(--color-main-purple);
 }
 
 @media screen and (max-width: 375px) {

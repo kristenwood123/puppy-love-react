@@ -2,7 +2,6 @@ import React from 'react'
 
 const Dog = ({dog}) => {
   const { id, name, breed, image, percent } = dog;
-  console.log(percent)
 
   return (
     <div key={id} className='dog__card'>

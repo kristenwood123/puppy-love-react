@@ -28,7 +28,6 @@ const App = () => {
         {showModal && 
         <Modal showModal={showModal} setShowModal={setShowModal}/>
         }
-      
         <Routes>
           <Route 
             path='/' 
@@ -51,6 +50,7 @@ const App = () => {
             } 
           />
         </Routes>
+      <Footer/>
     </>
   )
 }
