@@ -74,6 +74,7 @@ body {
 
 .hero-section h3 {
   padding-bottom: 3rem;
+  color: var(--color-dark-text);
 }
 
 .hero-items {
@@ -276,6 +277,22 @@ footer {
   padding: 5rem;
   background-color: white;
   color: var(--color-main-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  font-size: 12px;
+  list-style-type: none;
+  color: var(--color-dark-text);
+  margin-left: 3px;
+  cursor: pointer;
 }
 
 .footer-logo {

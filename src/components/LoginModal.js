@@ -1,10 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import pawLogo from '../images/2ndlogo.svg'
-import { BsApple } from 'react-icons/bs'
-import { FcGoogle } from 'react-icons/fc'
-import { FaGooglePlay } from 'react-icons/fa'
-import { MdOutlineEmail } from 'react-icons/md'
+import { BsApple, FcGoogle, FaGooglePlay, MdOutlineEmail } from '../utils'
+
 
 const Modal = ({ setShowModal}) => {
   const navigate = useNavigate()
